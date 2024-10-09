@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Send, Github, ExternalLink, Code, Sun, Moon } from 'lucide-react';
+import { Send, Github, ExternalLink, Sun, Moon, LinkedinIcon, TwitterIcon, InstagramIcon, Hammer, Database, Tv } from 'lucide-react';
 
 const NewspaperPortfolio = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -87,7 +87,7 @@ return (
       <header className={`${isDarkMode ? 'bg-gray-900 border-gray-100' : 'bg-[#f5f5f0] border-black'} border-b-8 p-6 relative`}>
         <button 
           onClick={toggleDarkMode} 
-          className={`absolute top-4 right-4 p-2 rounded-full ${isDarkMode ? 'bg-gray-700 text-gray-200 hover:bg-gray-600' : 'bg-gray-300 text-gray-800 hover:bg-gray-500'} transition-colors duration-300`}
+          className={`fixed top-4 right-4 p-2 rounded-full ${isDarkMode ? 'bg-gray-700 text-gray-200 hover:bg-gray-600' : 'bg-gray-300 text-gray-800 hover:bg-gray-500'} transition-colors duration-300`}
         >
           {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
         </button>
@@ -159,7 +159,7 @@ return (
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className={`border-2 ${isDarkMode ? 'border-gray-100' : 'border-black'} p-4 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
               <h3 className="font-bold mb-2 flex items-center">
-                <Code size={20} className="mr-2" /> Frontend
+                <Tv size={20} className="mr-2" /> Frontend
               </h3>
               <ul className="list-disc list-inside">
                 <li>React.js</li>
@@ -170,7 +170,7 @@ return (
             </div>
             <div className={`border-2 ${isDarkMode ? 'border-gray-100' : 'border-black'} p-4 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
               <h3 className="font-bold mb-2 flex items-center">
-                <Code size={20} className="mr-2" /> Backend
+                <Database size={20} className="mr-2" /> Backend
               </h3>
               <ul className="list-disc list-inside">
                 <li>Node.js</li>
@@ -181,7 +181,7 @@ return (
             </div>
             <div className={`border-2 ${isDarkMode ? 'border-gray-100' : 'border-black'} p-4 ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
               <h3 className="font-bold mb-2 flex items-center">
-                <Code size={20} className="mr-2" /> Tools & Others
+                <Hammer size={20} className="mr-2" /> Tools & Others
               </h3>
               <ul className="list-disc list-inside">
                 <li>Git & GitHub</li>
@@ -259,13 +259,13 @@ return (
             <Github size={24} className="mr-1" /> GitHub
             </a>
             <a href="https://www.linkedin.com/in/sulaimanrsb/" target="_blank" rel="noopener noreferrer" className="flex items-center text-lg hover:underline mb-2">
-            <ExternalLink size={24} className="mr-1" /> LinkedIn
+            <LinkedinIcon size={24} className="mr-1" /> LinkedIn
             </a>
             <a href="https://x.com/RsbSulayman" target="_blank" rel="noopener noreferrer" className="flex items-center text-lg hover:underline mb-2">
-            <ExternalLink size={24} className="mr-1" /> X platform
+            <TwitterIcon size={24} className="mr-1" /> X platform
             </a>
             <a href="https://www.instagram.com/sulaymancodes/" target="_blank" rel="noopener noreferrer" className="flex items-center text-lg hover:underline mb-2">
-            <ExternalLink size={24} className="mr-1" /> Instagram
+            <InstagramIcon size={24} className="mr-1" /> Instagram
             </a>
         </div>
       </section>
