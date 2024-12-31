@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Send, Github, ExternalLink, Sun, Moon, LinkedinIcon, TwitterIcon, InstagramIcon, Hammer, Database, Tv } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { text } from 'framer-motion/client';
+
 const NewspaperPortfolio = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -9,6 +9,14 @@ const NewspaperPortfolio = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const projects = [
+    {
+      title: "Members Only",
+      description: "Members Only is a web application that shows a certain post made by users in the webapp based on the individuals status.",
+      github: "https://github.com/Sulaymancodes/members-only",
+      live: "https://members-only-production-5356.up.railway.app/",
+      technologies: ["Ejs", "Node js", "Express Js", "Postgres", "CSS"],
+      thumbnail: "/mo1.png" 
+    },
     {
       title: "CV-builder",
       description: "A responsive CV Builder that allows users to easily input, edit, and submit personal, educational, and professional information.",
@@ -24,15 +32,7 @@ const NewspaperPortfolio = () => {
       live: "https://sulaymancodes.github.io/Insight-todo-app-/",
       technologies: ["JavaScript", "Webpack", "date-fns", "localStorage"],
       thumbnail: "/todoapp.png" 
-    },
-    {
-      title: "Weather Forecast Site",
-      description: "A responsive weather forecast app that allows users to search for specific locations and provide weather details for that location.",
-      github: "https://github.com/Sulaymancodes/weather-app",
-      live: "https://sulaymancodes.github.io/weather-app/",
-      technologies: ["JavaScript", "Visual Crossing API", "CSS"],
-      thumbnail: "/weatherapp.png" 
-    }      
+    }   
   ];
 
   useEffect(() => {
