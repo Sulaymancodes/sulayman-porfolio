@@ -10,6 +10,14 @@ const NewspaperPortfolio = () => {
 
   const projects = [
     {
+      title: "Cave",
+      description: "A simple file storage and management system built with Node.js, Express, EJS, and Prisma ORM, allowing users to upload, delete, and organize files while storing metadata in a PostgreSQL database.",
+      github: "https://github.com/Sulaymancodes/srsStorage",
+      live: "https://srsstorage-production.up.railway.app/",
+      technologies: ["Ejs", "Node js", "Express Js", "Postgres", "Prisma ORM", "Cloudinary", "CSS"],
+      thumbnail: "/cave screenshot.png" 
+    },
+    {
       title: "Members Only",
       description: "Members Only is a web application that shows a certain post made by users in the webapp based on the individuals status.",
       github: "https://github.com/Sulaymancodes/members-only",
